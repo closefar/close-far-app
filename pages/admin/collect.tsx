@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Collect() {
 
 	return (
 		<>
@@ -11,21 +11,15 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<div className='container text-center'>
-					<div className='row'>
+				<div className='container'>
+					<div className='row text-center'>
 						<div className='col'>
 							<h3>
-								So Close, But Yet So Far Away
+								Collect
 							</h3>
-							<p>
-								So Close, But Yet So Far Away
-							</p>
 						</div>
 					</div>
-					<div className='row mb-3 justify-content-center'>
-						<div className='cf-border-small'></div>
-					</div>
-					<div className='row text-start mb-3'>
+					<div className='row text-start mt-5 mb-3'>
 						<div className='col-12 mb-2'>
 							Filters
 						</div>
@@ -67,8 +61,8 @@ export default function Home() {
 						{[1,2,3,4,5,6,7,8].map((i) => {
 							return <div className='col-12 col-md-4 mb-3'>
 								<Link href={`${i}`}>
-									<img src={`${i}.jpg`} className='img-fluid img-border' />
-									<h4 className='text-start'>
+									<img src={`/${i}.jpg`} className='img-fluid img-border' />
+									<h4>
 										<div className='d-inline'>30.00</div>
 										<img src="/flow.ico" className='img-fluid mx-2' width="20" />
 									</h4>

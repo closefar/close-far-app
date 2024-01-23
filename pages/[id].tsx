@@ -31,6 +31,10 @@ export default function Detail() {
 								<span>
 									{Mock[id] && Mock[id].age}
 								</span>
+								<span>
+									<div className='d-inline'>30.00</div>
+									<img src="/flow.ico" className='img-fluid mx-2' width="20" />
+								</span>
 							</div>
 						</div>
 					</div>

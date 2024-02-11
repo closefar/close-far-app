@@ -16,7 +16,7 @@ export default function Header() {
           </div>
           <div className="col-12 col-md-4">
             <Link href="/">
-              <img src="/logo.png" alt="Close Far" width="95" height="60" />
+              <img src="/logo3.jpg" alt="Close Far" width="97" height="60" />
             </Link>
           </div>
           <div className="col-12 d-block d-md-none text-center mt-3">
@@ -36,19 +36,14 @@ export default function Header() {
                     Mint
                   </button>
                 </Link>
-                <Link href="/admin/my-nfts">
-                  <button className="btn">
-                    My NFTs
-                  </button>
-                </Link>
                 <Link href="/admin/collect">
                   <button className="btn">
                     Collect
                   </button>
                 </Link>
-                <Link href="/admin/sell">
+                <Link href="/admin/my-collection">
                   <button className="btn">
-                    Sell
+                    My Collection
                   </button>
                 </Link>
                 <button className="btn" onClick={fcl.unauthenticate}>
@@ -60,8 +55,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="container mb-4">
+      <div className="container-fluid mb-4">
         <div className='row'>
+          <div className='cf-border-small'></div>
           <div className='cf-border'></div>
         </div>
       </div>

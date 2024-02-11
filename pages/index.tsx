@@ -11,63 +11,151 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<div className='container text-center'>
-					<div className='row'>
+				<div className='container text-center mt-5'>
+					<div className='row my-5'>
 						<div className='col'>
-							<h3>
-								So Close, But Yet So Far Away
-							</h3>
-							<p>
-								So Close, But Yet So Far Away
-							</p>
+							<div className='d-inline-block mt-5'>
+								<h1>
+									Mint and Collect Everlasting Lives
+								</h1>
+								<div className='text-center'>
+									<button className="btn">Learn more...</button>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div className='row mb-3 justify-content-center'>
-						<div className='cf-border-small'></div>
 					</div>
 					<div className='row text-start mb-3'>
-						<div className='col-12 mb-2'>
-							Filters
+						<div className='col-12'>
+							Latest Closeups
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
-							<div className="form-floating">
-								<select className="form-select shadow-none" id="floatingSelect" aria-label="Floating label select example">
-									<option selected>Select a Country</option>
-									<option value="1">Czech Republic</option>
-									<option value="2">Germany</option>
-									<option value="3">Italy</option>
-								</select>
-								<label htmlFor="floatingSelect">Country</label>
+						{/* <div className='col-6 col-md-4 mb-2'>
+							<input placeholder='Name' className="form-control shadow-none cf-form-control" />
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
 							</div>
 						</div>
 						<div className='col-6 col-md-4 mb-2'>
-							<div className="form-floating">
-								<select className="form-select shadow-none" id="floatingSelect" aria-label="Floating label select example">
-									<option selected>Select a Language</option>
-									<option value="1">English</option>
-									<option value="2">Dutch</option>
-									<option value="3">Italian</option>
-								</select>
-								<label htmlFor="floatingSelect">Language</label>
+							<input placeholder='Search on tags' className="form-control shadow-none cf-form-control" />
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
 							</div>
 						</div>
 						<div className='col-6 col-md-4 mb-2'>
-							<div className="form-floating">
-								<select className="form-select shadow-none" id="floatingSelect" aria-label="Floating label select example">
-									<option selected>Select an Age</option>
-									<option value="1">20</option>
-									<option value="2">21</option>
-									<option value="3">22</option>
-								</select>
-								<label htmlFor="floatingSelect">Age</label>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Country</option>
+								<option value="1">Czech Republic</option>
+								<option value="2">Germany</option>
+								<option value="3">Italy</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div> */}
+						{/* <div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Year of Birth</option>
+								<option value="1">1994</option>
+								<option value="2">1995</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
 							</div>
 						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Month of Birth</option>
+								<option value="1">Oct.</option>
+								<option value="2">Sept.</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Day of Birth</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Nationality</option>
+								<option value="1">Iraninan</option>
+								<option value="2">Dutch</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>State</option>
+								<option value="1">North</option>
+								<option value="2">Fars</option>
+								<option value="3">Blah</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Language</option>
+								<option value="1">English</option>
+								<option value="2">Dutch</option>
+								<option value="3">Italian</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Pronounce</option>
+								<option value="1">She/her/hers</option>
+								<option value="2">He/him/his</option>
+								<option value="3">They/them/thiers</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-6 col-md-4 mb-2'>
+							<select className="form-select shadow-none cf-form-control">
+								<option selected>Jobs</option>
+								<option value="1">Software eng.</option>
+							</select>
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div> */}
 					</div>
 					<div className='row'>
 						{[1,2,3,4,5,6,7,8].map((i) => {
 							return <div className='col-12 col-md-4 mb-3'>
-								<Link href={`${i}`}>
-									<img src={`${i}.jpg`} className='img-fluid img-border' />
+								<Link href={`/${i}`}>
+									<div className='cf-img-container position-relative'>
+										<img src={`/${i}.jpg`} className='img-fluid img-border' />
+										<div className='cf-img-text d-none fs-5'>
+											O
+											Watch
+										</div>
+									</div>
 									<h4 className='text-start'>
 										<div className='d-inline'>30.00</div>
 										<img src="/flow.ico" className='img-fluid mx-2' width="20" />

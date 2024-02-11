@@ -4,9 +4,10 @@ export default function Footer() {
 
   return (
     <>
-        <div className="container">
+        <div className="container-fluid">
             <div className='row my-3'>
-                <div className='cf-border'></div>
+                <div className='cf-border-small'></div>
+				<div className='cf-border'></div>
             </div>
         </div>
         <div className="container py-3">

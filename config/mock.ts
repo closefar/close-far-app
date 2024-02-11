@@ -1,49 +1,49 @@
 export default {
     1: {
         name: 'Maaike',
-        age: 23,
+        y_birth: 1995,
         language: 'Dutch',
         born: 'The Netherlands'
     },
     2: {
         name: 'Jacob',
-        age: 31,
+        y_birth: 1983,
         language: 'English',
         born: 'Belgium'
     },
     3: {
         name: 'Muhammad',
-        age: 36,
+        y_birth: 2001,
         language: 'Arabic',
         born: 'Saudi Arabia'
     },
     4: {
         name: 'Nina',
-        age: 25,
+        y_birth: 1994,
         language: 'English',
         born: 'Czech Republic'
     },
     5: {
         name: 'Susan',
-        age: 28,
+        y_birth: 1997,
         language: 'English',
         born: 'Germany'
     },
     6: {
         name: 'Gary',
-        age: 49,
+        y_birth: 1967,
         language: 'English',
         born: 'Bosnia and Herzegovina'
     },
     7: {
         name: 'Rihana',
-        age: 33,
+        y_birth: 1999,
         language: 'English',
         born: 'Ghana'
     },
     8: {
         name: 'Melita',
-        age: 35,
+        y_birth: 1980,
         language: 'Italian',
         born: 'Italy'
     },

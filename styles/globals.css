@@ -17,17 +17,19 @@ a {
 }
 
 .cf-border {
-  background: rgb(51,51,51);
-  background: radial-gradient(circle, rgba(51,51,51,1) 50%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
+  display: inline-block;
+  background: rgb(51,51,51,0.4);
+  background: radial-gradient(circle, rgba(51,51,51,0.4) 40%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
   height: 1px;
-  width: 100%;
+  width: 82%;
 }
 
 .cf-border-small {
-  background: rgb(51,51,51);
-  background: radial-gradient(circle, rgba(51,51,51,1) 50%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
+  display: inline-block;
+  background: rgb(51,51,51,0.4);
+  background: radial-gradient(circle, rgba(51,51,51,0.4) 40%, rgba(255,255,255,0) 90%, rgba(255,255,255,1) 100%);
   height: 1px;
-  width: 75%;
+  width: 18%;
 }
 
 .img-border {
@@ -35,13 +37,40 @@ a {
   outline-offset: -12px;
 }
 
+.cf-img-container:hover > div {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-flex !important;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .cf-dot-seperator > span:not(:last-child)::after {
-    content: "●";
-    color: #666;
-    font-size: 10px;
-    margin: 0px 10px;
-    /* position: absolute;
-    right: -18px;
-    top: 10px;
-    font-size: 6px; */
+  content: "●";
+  color: #666;
+  font-size: 10px;
+  margin: 0px 32px;
+}
+
+.btn-more-down::after {
+  content: "\25be";
+  color: #666;
+  margin-left: 6px;
+}
+
+.btn-more-up::after {
+  content: "\25b4";
+  color: #666;
+  margin-left: 6px;
+}
+
+.cf-form-control {
+  box-shadow: none;
+  border: 0px;
 }

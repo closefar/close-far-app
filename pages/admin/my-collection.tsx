@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Sell() {
+
+	const router = useRouter()
 
 	return (
 		<>
@@ -48,8 +51,8 @@ export default function Sell() {
 							</Link>
 							<div className='mt-2'>Minted</div>
 							<div className="d-flex my-2 gap-2 align-items-center justify-content-center">
-								<button className="flex-grow-1 btn btn-light" type="button">Edit</button>
-								<button className="flex-grow-1 btn btn-light" type="button">Add to sale list</button>
+								<button onClick={() => router.push('/admin/edit')} className="flex-grow-1 btn btn-light" type="button">Edit</button>
+								<button onClick={() => router.push('/admin/add-to-sale/1')} className="flex-grow-1 btn btn-light" type="button">Add to sale list</button>
 							</div>
 						</div>
 						<div className='col-12 col-md-4 mb-5'>
@@ -68,7 +71,7 @@ export default function Sell() {
 								<img src="/flow.ico" className='img-fluid mx-2' width="20" />
 							</div>
 							<div className="d-grid my-2">
-								<button className="btn btn-light" type="button">Add to sale list</button>
+								<button onClick={() => router.push('/admin/add-to-sale/2')} className="btn btn-light" type="button">Add to sale list</button>
 							</div>
 						</div>
 						<div className='col-12 col-md-4 mb-5'>

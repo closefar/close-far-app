@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-export default function Home() {
+export default function Mint1() {
+
+	const router = useRouter()
 
 	return (
 		<>
@@ -11,38 +14,40 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<div className='container text-center mt-5'>
-					<div className='row my-5'>
+				<div className='container'>
+					<div className='row my-5 text-center'>
 						<div className='col'>
 							<div className='d-inline-block mt-5'>
 								<h1>
-									Mint and Collect Everlasting Lives
+									Mint
 								</h1>
-								<div className='text-center'>
-									<button className="btn">Learn more...</button>
+							</div>
+						</div>
+					</div>
+					<div className='row'>
+						<div className='col-12 mb-5'>
+							<div className="cf-progress-stacked progress-stacked">
+								<div className="progress" style={{ width: '33.3%' }}>
+									<div className="progress-bar bg-dark"> 1. Upload Video </div>
+								</div>
+								<div className="progress" style={{ width: '33.4%' }}>
+									<div className="progress-bar bg-dark"> 2. Add Information</div>
+								</div>
+								<div className="progress" style={{ width: '33.3%' }}>
+									<div className="progress-bar bg-light text-dark"> 3. Review and Mint</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className='row text-start mb-3'>
-						<div className='col-12'>
-							Latest Closeups
-						</div>
-						{/* <div className='col-6 col-md-4 mb-2'>
+					<div className='row'>
+						<div className='col-12 col-md-6 mb-2'>
 							<input placeholder='Name' className="form-control shadow-none cf-form-control" />
 							<div className='row'>
 								<div className='cf-border-small'></div>
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
-							<input placeholder='Search on tags' className="form-control shadow-none cf-form-control" />
-							<div className='row'>
-								<div className='cf-border-small'></div>
-								<div className='cf-border'></div>
-							</div>
-						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Country</option>
 								<option value="1">Czech Republic</option>
@@ -53,8 +58,8 @@ export default function Home() {
 								<div className='cf-border-small'></div>
 								<div className='cf-border'></div>
 							</div>
-						</div> */}
-						{/* <div className='col-6 col-md-4 mb-2'>
+						</div>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Year of Birth</option>
 								<option value="1">1994</option>
@@ -65,7 +70,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Month of Birth</option>
 								<option value="1">Oct.</option>
@@ -76,7 +81,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Day of Birth</option>
 								<option value="1">1</option>
@@ -87,7 +92,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Nationality</option>
 								<option value="1">Iraninan</option>
@@ -98,7 +103,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>State</option>
 								<option value="1">North</option>
@@ -110,7 +115,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Language</option>
 								<option value="1">English</option>
@@ -122,7 +127,7 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Pronounce</option>
 								<option value="1">She/her/hers</option>
@@ -134,7 +139,14 @@ export default function Home() {
 								<div className='cf-border'></div>
 							</div>
 						</div>
-						<div className='col-6 col-md-4 mb-2'>
+						<div className='col-12 col-md-6 mb-2'>
+							<input placeholder='tags' className="form-control shadow-none cf-form-control" />
+							<div className='row'>
+								<div className='cf-border-small'></div>
+								<div className='cf-border'></div>
+							</div>
+						</div>
+						<div className='col-12 col-md-6 mb-2'>
 							<select className="form-select shadow-none cf-form-control">
 								<option selected>Jobs</option>
 								<option value="1">Software eng.</option>
@@ -143,26 +155,15 @@ export default function Home() {
 								<div className='cf-border-small'></div>
 								<div className='cf-border'></div>
 							</div>
-						</div> */}
+						</div>
 					</div>
-					<div className='row'>
-						{[1,2,3,4,5,6,7,8].map((i) => {
-							return <div key={i} className='col-12 col-md-4 mb-3'>
-								<Link href={`/${i}`}>
-									<div className='cf-img-container position-relative'>
-										<img src={`/${i}.jpg`} className='img-fluid img-border' />
-										<div className='cf-img-text d-none fs-5'>
-											O
-											Watch
-										</div>
-									</div>
-									<h4 className='text-start'>
-										<div className='d-inline'>30.00</div>
-										<img src="/flow.ico" className='img-fluid mx-2' width="20" />
-									</h4>
-								</Link>
-							</div>
-						})}
+					<div className='row my-5'>
+						<div className='col-6 text-start'>
+							<button onClick={() => router.push('/admin/mint')} className='btn btn-light'>Prev</button>
+						</div>
+						<div className='col-6 text-end'>
+							<button onClick={() => router.push('/admin/mint-2')} className='btn btn-light'>Next</button>
+						</div>
 					</div>
 				</div>
 			</main>

@@ -1,6 +1,10 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Mint() {
+
+	const router = useRouter()
 
 	return (
 		<>
@@ -11,54 +15,40 @@ export default function Mint() {
 			</Head>
 			<main>
 				<div className='container'>
-					<div className='row text-center'>
+					<div className='row my-5 text-center'>
 						<div className='col'>
-							<h3>
-								Mint
-							</h3>
+							<div className='d-inline-block mt-5'>
+								<h1>
+									Mint
+								</h1>
+							</div>
 						</div>
 					</div>
-					<div className='row mt-5'>
-						<div className='col-12 col-md-6 mb-3'>
-							<div className="form-floating mb-3">
-								<input type="text" className="form-control shadow-none" id="floatingInput" placeholder="" />
-								<label htmlFor="floatingInput">Name</label>
-							</div>
-							<div className="form-floating mb-3">
-								<select className="form-select shadow-none" id="floatingSelect" aria-label="Floating label select example">
-									<option selected>Select a Country</option>
-									<option value="1">Czech Republic</option>
-									<option value="2">Germany</option>
-									<option value="3">Italy</option>
-								</select>
-								<label htmlFor="floatingSelect">Country</label>
-							</div>
-							<div className="form-floating mb-3">
-								<select className="form-select shadow-none" id="floatingSelect" aria-label="Floating label select example">
-									<option selected>Select a Language</option>
-									<option value="1">English</option>
-									<option value="2">Dutch</option>
-									<option value="3">Italian</option>
-								</select>
-								<label htmlFor="floatingSelect">Language</label>
-							</div>
-							<div className="form-floating">
-								<textarea style={{ height: "100px" }} className="form-control shadow-none" placeholder="About the NFT" id="floatingTextarea"></textarea>
-								<label htmlFor="floatingTextarea">About</label>
+					<div className='row justify-content-center mb-5'>
+						<div className='col-12 mb-5'>
+							<div className="cf-progress-stacked progress-stacked">
+								<div className="progress" style={{ width: '33.3%' }}>
+									<div className="progress-bar bg-dark"> 1. Upload Video </div>
+								</div>
+								<div className="progress" style={{ width: '33.4%' }}>
+									<div className="progress-bar bg-light text-dark"> 2. Add Information</div>
+								</div>
+								<div className="progress" style={{ width: '33.3%' }}>
+									<div className="progress-bar bg-light text-dark"> 3. Review and Mint</div>
+								</div>
 							</div>
 						</div>
-						<div className='col-12 col-md-6 mb-3'>
-							<div className="input-group mb-3">
-								<label className="input-group-text" htmlFor="inputGroupFile02">Upload the thumbnail</label>
-								<input type="file" className="form-control shadow-none" id="inputGroupFile02" />
-							</div>
-							<div className="input-group mb-3">
-								<label className="input-group-text" htmlFor="inputGroupFile01">Upload the video</label>
-								<input type="file" className="form-control shadow-none" id="inputGroupFile01" />
+					</div>
+					<div className='row justify-content-center'>
+						<div className='col-8 text-center'>
+							<div className='cf-upload-box'>
+								Select a video or drag here
 							</div>
 						</div>
-						<div className='col-12 text-center mt-4'>
-							<button type="button" className="btn btn-outline-primary">Mint my NFT</button>
+					</div>
+					<div className='row my-5'>
+						<div className='col text-end'>
+							<button onClick={() => router.push('/admin/mint-1')} className='btn btn-light'>Next</button>
 						</div>
 					</div>
 				</div>
